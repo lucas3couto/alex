@@ -168,7 +168,7 @@ export default class EditarAluno extends Component {
 
   handleSubmit = event => {
     const { id } = this.props.match.params;
-    fetch(`http://${process.env.REACT_APP_API_URL}/sistema/alunos/${id}`, {
+    fetch(`https://enigmatic-shore-43701.herokuapp.com/sistema/alunos/${id}`, {
       method: "put",
       id: id,
       body: JSON.stringify(this.state.aluno),
