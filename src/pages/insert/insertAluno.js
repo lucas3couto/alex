@@ -1,4 +1,3 @@
-import { REACT_APP_API_URL } from 'react-native-dotenv';
 import React, { Component } from 'react';
 import api from '../../services/services';
 import { Redirect } from 'react-router-dom';
@@ -194,17 +193,6 @@ export default class InsertAluno extends Component {
 
   handleSubmit = async event => {
 
-    // fetch(`http://${REACT_APP_API_URL}/sistema/alunos/`, {
-    //   method: "post",
-    //   body: JSON.stringify(this.state.aluno),
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   }
-    // }).then(data => {
-    //   if (data.ok) {        
-    //     this.setState({ redirect: true });
-    //   }
-    // }).catch(erro => console.log("Erro salvar aluno: " + erro)); 
 
     try{
       await api.post('/alunos', this.state.aluno)

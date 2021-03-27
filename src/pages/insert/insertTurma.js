@@ -1,4 +1,3 @@
-import { REACT_APP_API_URL } from 'react-native-dotenv';
 import React, { Component } from 'react';
 import api from '../../services/services';
 import { Redirect } from 'react-router-dom';
@@ -107,25 +106,13 @@ export default class InsertTurma extends Component {
   handleSubmit = async event => {
     event.preventDefault()
 
-    // fetch(`http://${REACT_APP_API_URL}/sistema/turmas/`, {
-    //   method: "post",
-    //   body: JSON.stringify(this.state.turma),
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   }
-    // }).then(data => {
-    //   if (data.ok) {
-    //     this.setState({ redirect: true });
-    //   }
-    // }).catch(erro => console.log("Erro salvar aluno: " + erro));
-
     try{
-      const response = await api.post('/alunos', this.state.turma)
+      const response = await api.post('/turmas', this.state.turma)
       console.log(" RESPO =>", response)
       this.setState({ redirect: true });
 
-    } catch (error){
-      console.log("Erro =>", error.message)
+    } catch (err){
+      console.log("Erro =>", err)
     }
 
     event.preventDefault();

@@ -1,4 +1,3 @@
-import { REACT_APP_API_URL } from 'react-native-dotenv';
 import React, { Component } from 'react';
 import api from '../../services/services';
 import { Redirect } from 'react-router-dom';
@@ -169,7 +168,7 @@ export default class EditarAluno extends Component {
 
   handleSubmit = event => {
     const { id } = this.props.match.params;
-    fetch(`http://${REACT_APP_API_URL}/sistema/alunos/${id}`, {
+    fetch(`http://${process.env.REACT_APP_API_URL}/sistema/alunos/${id}`, {
       method: "put",
       id: id,
       body: JSON.stringify(this.state.aluno),
