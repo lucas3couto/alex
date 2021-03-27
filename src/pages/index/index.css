@@ -1,0 +1,19 @@
+.content-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+.content-home h1 {
+  font-size: 5rem;
+  opacity: .4;
+}
+
+.content-home i {
+  font-size: 20rem;
+  opacity: .4;
+}

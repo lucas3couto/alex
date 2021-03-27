@@ -1,0 +1,59 @@
+.content-turma {
+    width: 100%;
+    height: calc(90vh - 3rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.card-info {
+    background-color: #b6d1e9;
+    width: 30rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.title h1:first-child {
+    margin-right: 1rem;
+}
+
+.info {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.info span {
+    font-weight: 400;
+}
+
+.btn-details i {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-place i:first-child {
+    margin-right: 2.5rem;
+}
+
+.btn-delete {
+    font-size: 2rem;
+    border: none;
+    background-color: unset;
+    color: #67749e;
+    transition: .6s ease;
+    outline: none!important;
+}
+
+.btn-delete:hover {
+    cursor: pointer;
+    color:#3d455f;
+}

@@ -1,0 +1,43 @@
+.input-info {
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: .5rem;
+    width: 80%;
+}
+
+.input-title {
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: .5rem;
+    width: 14rem;
+    margin: 0 0 .5rem -.5rem;
+}
+
+.input-info-date {
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: .5rem;
+    width: 40%;
+}
+
+.btn-save {
+    background-color: unset;
+    border: none;
+}
+
+.btn-save i {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #67749e;
+    transition: .6s ease;
+}
+
+.btn-save i:hover {
+    cursor: pointer;
+    color:#3d455f;
+}
